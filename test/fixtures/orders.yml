@@ -1,0 +1,33 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  order_id: 1
+  location_id: 1
+  company_id: 1
+  delivery_method: MyString
+  notes: MyText
+  dispatched_consignment_note: MyString
+  dispatched: false
+  delivery_address1: MyString
+  delivery_address2: MyString
+  delivery_suburb: MyString
+  delivery_state: MyString
+  delivery_postcode: MyString
+  delivery_country: MyString
+  delivery_notes: MyText
+
+two:
+  order_id: 1
+  location_id: 1
+  company_id: 1
+  delivery_method: MyString
+  notes: MyText
+  dispatched_consignment_note: MyString
+  dispatched: false
+  delivery_address1: MyString
+  delivery_address2: MyString
+  delivery_suburb: MyString
+  delivery_state: MyString
+  delivery_postcode: MyString
+  delivery_country: MyString
+  delivery_notes: MyText
