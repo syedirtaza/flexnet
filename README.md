@@ -10,6 +10,7 @@ This is a Ruby on Rails application that provides a mock API for querying and ma
 - [Authentication](#authentication)
 - [API Endpoints](#api-endpoints)
 - [Testing the API](#testing-the-api)
+- [Running Tests](#running-tests)
 - [Development Notes](#development-notes)
 
 ## Architecture Overview
@@ -108,7 +109,7 @@ The authentication flow works as follows:
   - `client`: from the sign-in response
   - `expiry`: from the sign-in response
   - `uid`: from the sign-in response
-  - `Content-Type: application/json`
+  - `Content-Type`: `application/json`
 - **Response**:
   ```json
   {
@@ -140,6 +141,30 @@ To test the API endpoints, you can use tools like Postman or curl:
 
 2. **Access Orders**:
    - Make a `GET` request to `http://127.0.0.1:3000/api/v1/orders/:id` with the tokens included in the headers.
+
+### Running Tests
+
+The application includes a suite of tests to ensure that the code behaves as expected. These tests cover models, controllers, and various features of the application.
+
+#### **Model Tests**
+
+- **Validation Tests**: Ensure that models are validating data correctly, such as ensuring that a `User` cannot be saved without an email.
+- **Method Tests**: Test custom methods in models, such as the `generate_tokens` method in the `User` model.
+
+#### **Controller Tests**
+
+- **Action Tests**: Verify that controller actions work as expected, including testing the `sign_in` action in the `AuthController` and the `show` action in the `OrdersController`.
+- **Response Tests**: Ensure that the correct responses and status codes are returned.
+
+#### Running the Tests
+
+To run the tests, use the following command:
+
+```bash
+rails test
+```
+
+This command will execute all the tests in the `test` directory and display the results, including any failures or errors.
 
 ### Development Notes
 
