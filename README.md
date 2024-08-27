@@ -41,11 +41,7 @@ This is a Ruby on Rails application that provides a mock API for querying and ma
 
 1. **Clone the repository**:
    ```bash
-<<<<<<< HEAD
-   git clone https://github.com/syedirtaza/flexnet
-=======
    git clone https://github.com/syedirtaza/flexnet.git
->>>>>>> c3002431a073653f283637544caf4fdba5aa8dee
    cd flexnet
    ```
 
