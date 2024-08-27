@@ -40,8 +40,8 @@ This is a Ruby on Rails application that provides a mock API for querying and ma
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/abc-roasters-api.git
-   cd abc-roasters-api
+   git clone https://github.com/syedirtaza/flexnet
+   cd flexnet
    ```
 
 2. **Install dependencies**:

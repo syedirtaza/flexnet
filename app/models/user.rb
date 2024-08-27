@@ -1,6 +1,6 @@
 class User < ApplicationRecord
     has_secure_password
-  
+    validates :email, presence: true
     # Method to generate new tokens
     def generate_tokens
       self.update!(
